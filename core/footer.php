@@ -1,0 +1,26 @@
+	</div>
+	<script>
+		$(window).on("load",function(){
+			$(".container-logos").css("opacity","1");
+		});
+		setTimeout(animarVoltar,500);
+		function animarVoltar(){
+			$("#imgVoltar1").css("left","-35%");
+			$("#imgVoltar2").css("left","0%");
+			setTimeout(()=>{
+				$("#imgVoltar1").css("opacity","0");
+				$("#imgVoltar2").css("opacity","0");
+				setTimeout(()=>{
+					$("#imgVoltar1").css("left","0%");
+					$("#imgVoltar2").css("left","35%");
+					setTimeout(()=>{
+						$("#imgVoltar1").css("opacity","1");
+						$("#imgVoltar2").css("opacity","1");
+						setTimeout(animarVoltar,1000);
+					},500);
+				},500);
+			},100);
+		}
+	</script>
+</body>
+</html>

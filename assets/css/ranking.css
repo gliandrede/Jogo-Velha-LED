@@ -1,0 +1,171 @@
+.container-ranking{
+    position: absolute;
+    top: 340px;
+    left: 20px;
+    width: 880px;
+
+    padding: 32px 40px 32px 56px;
+    gap: 48px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-family: var(--regular);
+}
+.titulo-game{
+	display: none;
+    color: var(--azul);
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 125%;
+}
+.descricao{
+	display: none;
+    color: var(--azul);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 140%;
+}
+.header-games{
+    margin-bottom: 96px;
+}
+.ranking{
+	position: absolute;
+	top: 28%;
+	width: 90%;
+	left: 2.5%;
+	/*background-color: red;*/
+	height: 44%;
+}
+.row{
+	position: relative;
+	width: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	height: 10%;
+	/*background-color: blue;*/
+
+	font-size: 30px;
+}
+.row[style*='display: block']{
+	display: flex !important;
+}
+.posicao{
+	width: 10%;
+	text-align: right;
+	font-size: 50px;
+	font-family: var(--thin);
+	color: var(--azul);
+	letter-spacing: -2px;
+}
+.nome-jogador{
+	width: 60%;
+	padding-left: 5%;
+	font-family: var(--demi);
+	color: var(--azul);
+	text-transform: capitalize;
+}
+.destaque{
+	font-family: var(--bold);
+}
+#txtVoceRanking{
+	color: var(--azul);
+}
+.pontos-jogador{
+	display: none;
+	width: 25%;
+	text-align: right;
+	font-family: var(--bold);
+	color: var(--azul);
+	transition: 1s;
+	animation: pulsar 2s ease-in-out 1s forwards;
+}
+@keyframes pulsar {
+	to{
+		transform: scale(1.05);
+	}
+	from{
+		transform: scale(1);
+	}
+}
+#posicao1{
+	font-size: 70px;
+	font-family: var(--demi);
+}
+#posicao2{
+	font-size: 56px;
+	font-family: var(--demi);
+}
+#posicao3{
+	font-size: 50px;
+	font-family: var(--demi);
+}
+.fora-top{
+	font-family: var(--bold);
+}
+
+.game{
+	position: absolute;
+	width: 100%;
+	top: 79%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.game[style*='display: block']{
+	display: flex !important;
+}
+.icon-game{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 120px;
+	height: 120px;
+
+	border: 4px solid var(--azul);
+	border-radius: 50%;
+
+}
+.text-game{
+	font-size: 30px;
+	font-family: var(--bold);
+	color: var(--azul);
+	border: solid 7px var(--azul);
+	border-radius: 40px;
+	padding: 10px 30px;
+	margin-left: 30px;
+}
+#btnEnviar{
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translateX(-50%);
+
+    box-sizing: border-box;
+
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 56px;
+    gap: 24px;
+
+    /*border: 4px solid var(--azul);*/
+    /*color: var(--azul);*/
+    background-color: var(--azul);
+    color: white;
+    border-radius: 99px;
+
+    font-family: var(--regular);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+}
+#btnEnviar[style*='display: block']{
+    display: flex !important;
+}

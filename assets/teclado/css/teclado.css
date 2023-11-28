@@ -1,0 +1,115 @@
+@font-face {
+	font-family: 'gotham';
+	src: url('../fonts/GothamBook.ttf');
+}
+@font-face {
+	font-family: 'gotham-medium';
+	src: url('../fonts/GothamMedium.otf');
+}
+@font-face {
+	font-family: 'gotham-bold';
+	src: url('../fonts/GothamBlack.otf');
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+textarea:focus, input:focus, button:focus{
+    outline: none;
+}
+
+body{
+	scrollbar-width: none;
+	overflow: hidden;
+}
+
+.container-teclado{
+	position: absolute;
+	z-index: 999;	
+	height: 380px;
+	width: 1405px;
+	/*bottom: 450px;*/
+	border-radius: 10px;
+	background: rgb(125,125,125);
+	left: 100px;
+	/*zoom*/
+	-ms-zoom: 0.635;
+    -moz-transform: scale(0.635);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.635);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.635);
+    -webkit-transform-origin: 0 0;
+}
+
+.teclas{
+	float: left;
+	margin: 5px 8px;
+	width: 72px;
+	height: 72px;
+	text-align: center;
+	line-height: 70px;
+	border-radius: 2px;
+	background: rgb(255,255,255);
+	color: rgb(155,155,155);
+	box-shadow: 0px 2px rgb(50,50,50);
+}
+
+/* teclado com letras */
+.teclado-letras{
+	position: absolute;
+	z-index: 1;
+	width: 1060px;
+	height: 340px;
+	top: 20px;
+	left: 20px;
+	font-family: gotham;
+	font-size: 22px;
+	/*background: rgb(255,0,0,0.5);*/
+}
+.tecla-apagar{
+	background: rgb(155,155,155);
+	width: 160px;
+}
+.img-apagar{
+	width: 60px;
+	padding-top: 18px;
+}
+.img-shift{
+	width: 30px;
+	padding-top: 20px;
+}
+.espacamento{
+	margin-left: 40px;
+}
+.vazio{
+	margin-left: 48px;
+	opacity: 0;
+}
+.tecla-espaco{
+	width: 440px;
+}
+.tecla-numeros{
+	margin-left: 40px;
+}
+.tecla-com{
+	width: 144px; 
+	color: rgb(255,255,255);
+	background: rgb(155,155,155);
+}
+
+/* teclado com numeros */
+.teclado-numeros{
+	position: absolute;
+	z-index: 1;
+	width: 265px;
+	height: 340px;
+	top: 20px;
+	right: 20px;
+	font-family: gotham;
+	font-size: 22px;
+	/*background: rgb(0,255,0,0.5);*/
+	/*display: none;*/
+}
